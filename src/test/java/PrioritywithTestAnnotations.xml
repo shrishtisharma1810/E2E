@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="com.mycompany.app.PrioritywithTestAnnotations">
+      <methods>
+      <!-- Here we are trying to run all methods except k using exclude tag -->
+      <exclude name="k">
+      </exclude>
+      
+      <!-- Here we are trying to run only method b using include tag -->
+       <!-- <include name="b">
+      </include>
+      -->
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

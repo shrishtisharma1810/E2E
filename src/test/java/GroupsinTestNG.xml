@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+  <groups>
+  <run>
+  <include name="regression">
+  </include>
+  </run>
+  </groups>
+    <classes>
+      <class name="com.mycompany.app.GroupsinTestNG"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+<!-- Here u can run test cases groupwise either all TCs of sanity or regression by including group name in include tag -->
+<!-- to do group wise execution, test tag->add groups tag->inside groups add run tag->inside run tag add include tag -->

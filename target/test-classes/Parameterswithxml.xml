@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="Suite">
+<parameter name="no1" value="50"></parameter>
+<parameter name="no2" value="30"></parameter>
+
+
+  <test thread-count="5" name="sub">
+  <!--<parameter name="no1" value="100"></parameter>-->
+  <!--<parameter name="no2" value="70"></parameter>-->
+  <parameter name="message" value="normal parameter"></parameter>
+    <classes>
+      <class name="com.mycompany.app.substraction"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="add">
+  <!-- <parameter name="no1" value="85"></parameter>  -->
+  <!-- <parameter name="no2" value="40"></parameter>  -->
+    <classes>
+      <class name="com.mycompany.app.Parameterswithxml"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
+<!-- Here we have added parameter at test level, this is done when we want to run different test cases within same class -->
+<!-- Also we have added parameter at suite level, this is done when we want to run test cases from different classes with same parameter -->
+<!-- Lastly we have added parameter at both suite and test level, in this case it will consider the parameter values at test level as they are nearest -->
